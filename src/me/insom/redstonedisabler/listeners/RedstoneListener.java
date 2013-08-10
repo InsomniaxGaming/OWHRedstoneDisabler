@@ -1,6 +1,6 @@
 package me.insom.redstonedisabler.listeners;
 
-import me.insom.redstonedisabler.RedstoneDisabler;
+import me.insom.redstonedisabler.OWHRedstoneDisabler;
 
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
@@ -11,10 +11,10 @@ import com.sk89q.worldguard.protection.managers.RegionManager;
 
 public class RedstoneListener implements org.bukkit.event.Listener{
 	
-	RedstoneDisabler myPlugin = null;
+	OWHRedstoneDisabler myPlugin = null;
 	StateFlag flag = null;
 	
-	public RedstoneListener(RedstoneDisabler instance)
+	public RedstoneListener(OWHRedstoneDisabler instance)
 	{
 		myPlugin = instance;
 		flag = myPlugin.getRedstoneFlag();

@@ -6,7 +6,7 @@ import com.mewin.WGCustomFlags.WGCustomFlagsPlugin;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.sk89q.worldguard.protection.flags.StateFlag;
 
-public class RedstoneDisabler extends org.bukkit.plugin.java.JavaPlugin{
+public class OWHRedstoneDisabler extends org.bukkit.plugin.java.JavaPlugin{
 	
 	WorldGuardPlugin worldGuard = null;
 	WGCustomFlagsPlugin customFlags = null;
