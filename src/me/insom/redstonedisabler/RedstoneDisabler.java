@@ -13,7 +13,10 @@ public class RedstoneDisabler extends org.bukkit.plugin.java.JavaPlugin{
 	
 	StateFlag flag = new StateFlag("redstone", true);
 	
-	public void onEnable(){
+	public void onEnable()
+	{
+		
+		this.getLogger().info("Enabling RedstoneDisabler");
 		
 		worldGuard = (WorldGuardPlugin)this.getServer().getPluginManager().getPlugin("WorldGuard"); 
 		customFlags = (WGCustomFlagsPlugin)this.getServer().getPluginManager().getPlugin("WGCustomFlags");
@@ -30,6 +33,11 @@ public class RedstoneDisabler extends org.bukkit.plugin.java.JavaPlugin{
 		
 	}
 	
+	public void onDisable()
+	{
+		this.getServer().getLogger().info("Disabling RedstoneDisabler");
+	}
+	
 	public WorldGuardPlugin getWorldGuard()
 	{
 		return worldGuard;
@@ -43,7 +51,5 @@ public class RedstoneDisabler extends org.bukkit.plugin.java.JavaPlugin{
 	public StateFlag getRedstoneFlag(){
 		return flag;
 	}
-	
-	public void onDisable(){}
 
 }
