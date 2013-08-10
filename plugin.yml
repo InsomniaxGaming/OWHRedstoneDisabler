@@ -1,0 +1,6 @@
+author: 10102
+name: RedstoneDisabler
+description: Enable/Disable redstone via Region Flag
+depend: [WorldGuard, WorldEdit, WGCustomFlags]
+main: me.insom.redstonedisabler.RedstoneDisabler
+version: 0.1
