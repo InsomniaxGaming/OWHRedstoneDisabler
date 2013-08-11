@@ -25,14 +25,6 @@ public class RedstoneListener implements org.bukkit.event.Listener{
 	{
 		Block block = e.getBlock();
 		RegionManager manager = myPlugin.getWorldGuard().getRegionManager(block.getWorld());
-		
-		//First, check global region
-		if(!(myPlugin.getWorldGuard().getGlobalRegionManager().allows(flag, block.getLocation())))
-		{
-			e.setNewCurrent(0);
-			return;
-		}
-
 		ApplicableRegionSet set = manager.getApplicableRegions(block.getLocation());
 		
 		//check any regions the player is in
